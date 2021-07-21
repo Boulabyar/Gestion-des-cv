@@ -1,0 +1,9 @@
+<ol>
+    <!-- <app-item (msgPers)="persReceived($event)" [onePerson]="lstPers[0]" ></app-item>
+    <app-item (msgPers)="persReceived($event)" [onePerson]="lstPers[1]" ></app-item>
+    <app-item (msgPers)="persReceived($event)" [onePerson]="lstPers[2]" ></app-item> -->
+    <app-item *ngFor="let p of lstPers" (msgPers)="persReceived($event)" [onePerson]="p" ></app-item>
+    
+</ol>
+
+<!-- <button class="btn btn-warning" (click)="showList()">Show LIST LIST</button> -->
